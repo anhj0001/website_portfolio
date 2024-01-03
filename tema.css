@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img:hover {
+  filter: grayscale(70%);
+  transition: 0.4s linear;
+}
+/* ------------- MOBILE ------------ */
+/* ------------- MOBILE ------------ */
+/* ------------- MOBILE ------------ */
+/* ------------- MOBILE ------------ */
+
+@media screen and (max-width: 800px) {
+  .overskrift {
+    text-align: center;
+    font-size: 5cqw;
+    background-color: #1c004c;
+    color: white;
+    padding: 30px;
+  }
+  /* ---------- TEAMAER ---------- */
+  .tema_box {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  .mmd_tema {
+    text-align: center;
+  }
+  .display_none {
+    text-align: center;
+  }
+}
+
+/* ----------- DESKTOP ------------ */
+/* ----------- DESKTOP ------------ */
+/* ----------- DESKTOP ------------ */
+/* ----------- DESKTOP ------------ */
+
+@media screen and (min-width: 800px) {
+  .overskrift {
+    text-align: center;
+    font-size: 3.7cqw;
+    background-color: #1c004c;
+    color: white;
+    padding: 80px 30px;
+  }
+  /* ---------- TEAMAER ---------- */
+  .tema_box_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .tema_box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .mmd_tema {
+    text-align: center;
+  }
+  .display_none {
+    display: none;
+  }
+}

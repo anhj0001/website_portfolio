@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------- MOBILE ------------ */
+/* ------------- MOBILE ------------ */
+/* ------------- MOBILE ------------ */
+/* ------------- MOBILE ------------ */
+
+@media screen and (max-width: 800px) {
+  .info_container {
+    background-color: #251750;
+    padding: 30px 0 30px 0;
+  }
+  .navn {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 30px;
+  }
+  .anton {
+    padding: 5% 5% 15% 5%;
+    background-color: whitesmoke;
+    margin: 0 50px 0 50px;
+  }
+  /* ------- TOP 3 TING ------ */
+  .badminton_container,
+  .mad_container,
+  .fodbold_container {
+    margin: 30px;
+  }
+  .top3 {
+    text-align: center;
+  }
+  .ikon {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .top3_text {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /* ------------- UDDANNELSE ------------- */
+  .uddannelse_container {
+    background-color: #e06837;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .uddannelse_text {
+    margin: 30px;
+  }
+}
+/* ----------- DESKTOP ------------ */
+/* ----------- DESKTOP ------------ */
+/* ----------- DESKTOP ------------ */
+/* ----------- DESKTOP ------------ */
+
+@media screen and (min-width: 800px) {
+  .info_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #251750;
+  }
+  .anton {
+    padding: 5% 5% 15% 5%;
+    background-color: whitesmoke;
+    scale: 90%;
+    margin-left: 30px;
+    max-width: 400px;
+  }
+  .navn {
+    text-align: left;
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 1.2rem;
+  }
+  /* ------- TOP 3 TING ------ */
+  .top3 {
+    text-align: center;
+  }
+  .top3_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .badminton_container,
+  .mad_container,
+  .fodbold_container {
+    margin: 30px;
+  }
+  .top3_text {
+    text-align: left;
+  }
+  .display_none {
+    display: none;
+  }
+  /* ---------- UDDANNELSE ---------- */
+  .uddannelse_container {
+    background-color: #e06837;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .uddannelse_text {
+    margin: 150px 30px 150px 30px;
+  }
+}
