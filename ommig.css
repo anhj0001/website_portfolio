@@ -24,6 +24,19 @@
     background-color: whitesmoke;
     margin: 0 50px 0 50px;
   }
+
+  /* ----------- KOMPETENCER ----------- */
+
+  .ikoner {
+    display: none;
+  }
+  .ikoner_inline {
+    margin: 30px;
+  }
+  .kompetencer_text {
+    margin: 30px;
+  }
+
   /* ------- TOP 3 TING ------ */
   .badminton_container,
   .mad_container,
@@ -45,12 +58,11 @@
   /* ------------- UDDANNELSE ------------- */
   .uddannelse_container {
     background-color: #e06837;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding-bottom: 20px;
   }
   .uddannelse_text {
-    margin: 30px;
+    margin: 10px;
   }
 }
 /* ----------- DESKTOP ------------ */
@@ -78,6 +90,28 @@
     margin-top: 40px;
     font-size: 1.2rem;
   }
+
+  /* ----------- KOMPETENCER ----------- */
+
+  .kompetencer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+  }
+  .ikoner {
+    margin: 30px 30px 30px 90px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ikoner_inline {
+    display: none;
+  }
+  .kompetencer_text {
+    margin: 30px;
+  }
+
   /* ------- TOP 3 TING ------ */
   .top3 {
     text-align: center;

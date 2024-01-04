@@ -6,6 +6,7 @@
 img:hover {
   filter: grayscale(70%);
   transition: 0.4s linear;
+  scale: 95%;
 }
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */

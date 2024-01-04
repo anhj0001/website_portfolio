@@ -10,13 +10,21 @@
   color: white;
   padding: 30px;
 }
+img:hover {
+  filter: grayscale(70%);
+  transition: 0.4s linear;
+  scale: 95%;
+}
 .menuer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   list-style: none;
-  margin: 10px 20%;
+  margin: 10px 10%;
+  background-color: rgba(240, 248, 255, 0.285);
+  padding: 20px;
+  border-radius: 20px;
 }
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */

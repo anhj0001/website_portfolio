@@ -3,53 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* ------------- MOBILE ------------ */
+/* ------------- MOBILE ------------ */
+/* ------------- MOBILE ------------ */
+/* ------------- MOBILE ------------ */
 
-/* ----- CHAT karrusel ----- */
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
+@media screen and (max-width: 800px) {
+  .forside_logo {
+    margin: 30px;
+  }
 }
 
-.carousel-slide {
-  display: none;
-}
+/* ----------- DESKTOP ------------ */
+/* ----------- DESKTOP ------------ */
+/* ----------- DESKTOP ------------ */
+/* ----------- DESKTOP ------------ */
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  padding: 10px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  color: #1c004c;
-}
-
-button:hover {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 40px;
-  padding: 10px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-}
-
-#prevBtn {
-  left: 10px;
-}
-
-#nextBtn {
-  right: 10px;
+@media screen and (min-width: 800px) {
+  .forside_logo {
+    margin-top: 60px;
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-bottom: 60px;
+  }
 }

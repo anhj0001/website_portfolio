@@ -27,3 +27,12 @@ h1 {
 h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
+.top {
+  width: 40px;
+  margin: 10px;
+}
+.top:hover {
+  filter: grayscale(70%);
+  transition: 0.4s linear;
+  scale: 95%;
+}
