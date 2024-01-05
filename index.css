@@ -3,14 +3,69 @@
   padding: 0;
   box-sizing: border-box;
 }
+.tema_ikon:hover {
+  filter: grayscale(70%);
+  transition: 0.4s linear;
+  scale: 95%;
+}
+
+.kig_ned_pil {
+  position: relative;
+  top: -100px;
+  left: 30%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid #1c004c;
+  margin: auto;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
 
 @media screen and (max-width: 800px) {
+  .kig_ned_pil {
+    display: none;
+  }
   .forside_logo {
     margin: 30px;
+  }
+  /* ---------- TEAMAER ---------- */
+
+  .tema_box_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #1c004c;
+  }
+  .tema_box {
+    text-align: center;
+    color: white;
+  }
+  .mmd_tema {
+    text-align: center;
+  }
+  .display_none {
+    display: none;
   }
 }
 
@@ -25,5 +80,22 @@
     margin-left: 26%;
     margin-right: 26%;
     margin-bottom: 60px;
+  }
+  /* ---------- TEAMAER ---------- */
+  .tema_box_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #1c004c;
+  }
+  .tema_box {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .mmd_tema {
+    text-align: center;
+  }
+  .display_none {
+    display: none;
   }
 }

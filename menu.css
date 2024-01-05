@@ -72,6 +72,18 @@ nav {
 .burger {
   display: none;
 }
+@media screen and (min-width: 800px) {
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e2e1d5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
@@ -112,5 +124,15 @@ nav {
   nav.active .menu a {
     font-size: 24px;
     text-align: right;
+  }
+  .dropdown-content {
+    display: none;
+    background-color: #e2e1d5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
