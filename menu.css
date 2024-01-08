@@ -19,6 +19,7 @@ footer {
   background-color: #e2e1d5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .logo img {
   width: 90px;
 }
@@ -79,6 +80,7 @@ nav {
     background-color: #e2e1d5;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    border-radius: 5px;
   }
   .dropdown:hover .dropdown-content {
     display: block;
@@ -127,12 +129,5 @@ nav {
   }
   .dropdown-content {
     display: none;
-    background-color: #e2e1d5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    position: relative;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
   }
 }

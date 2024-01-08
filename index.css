@@ -17,9 +17,13 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 30px solid #1c004c;
+  border-top: 30px solid#e2e1d5;
   margin: auto;
   animation: bounce 2s infinite;
+}
+
+html {
+  background-color: #1c004c;
 }
 
 @keyframes bounce {
@@ -56,6 +60,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #1c004c;
+    margin-bottom: 30px;
   }
   .tema_box {
     text-align: center;
@@ -84,8 +89,9 @@
   /* ---------- TEAMAER ---------- */
   .tema_box_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: #1c004c;
+    margin-bottom: 30px;
   }
   .tema_box {
     text-align: center;

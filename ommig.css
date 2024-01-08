@@ -3,26 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.cv {
+  text-align: right;
+  margin-right: 100px;
+}
+.top3_overskrift {
+  margin: 20px;
+}
+.year6 {
+  padding-top: 30px;
+}
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .info_container {
     background-color: #251750;
-    padding: 30px 0 30px 0;
   }
   .navn {
     text-align: center;
     color: whitesmoke;
-    margin-top: 30px;
-  }
-  .anton {
-    padding: 5% 5% 15% 5%;
-    background-color: whitesmoke;
-    margin: 0 50px 0 50px;
+    padding-bottom: 30px;
   }
 
   /* ----------- KOMPETENCER ----------- */
@@ -47,8 +50,11 @@
     text-align: center;
   }
   .ikon {
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .top3_text {
     text-align: left;
@@ -59,10 +65,21 @@
   .uddannelse_container {
     background-color: #e06837;
     color: rgb(255, 255, 255);
-    text-align: center;
   }
   .uddannelse_text {
-    margin: 10px;
+    margin: 0px 30px 10px 30px;
+    padding-bottom: 20px;
+  }
+  .cv {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .tojbutik {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 /* ----------- DESKTOP ------------ */
@@ -70,36 +87,42 @@
 /* ----------- DESKTOP ------------ */
 /* ----------- DESKTOP ------------ */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 991px) {
   .info_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     background-color: #251750;
   }
   .anton {
-    padding: 5% 5% 15% 5%;
-    background-color: whitesmoke;
-    scale: 90%;
-    margin-left: 30px;
-    max-width: 400px;
+    margin-left: 10%;
+    max-width: 500px;
   }
   .navn {
-    text-align: left;
-    color: aliceblue;
+    text-align: right;
+    color: rgb(255, 255, 255);
     padding: 10px;
-    margin-top: 40px;
-    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20%;
+    font-size: 2.5cqw;
   }
 
   /* ----------- KOMPETENCER ----------- */
 
   .kompetencer_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
   .ikoner {
-    margin: 30px 30px 30px 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
     width: 400px;
     display: flex;
     justify-content: center;
@@ -109,7 +132,7 @@
     display: none;
   }
   .kompetencer_text {
-    margin: 30px;
+    margin: 30px 30px 30px 50px;
   }
 
   /* ------- TOP 3 TING ------ */
@@ -138,9 +161,84 @@
     background-color: #e06837;
     color: whitesmoke;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .tojbutik {
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  .uddannelse_text {
+    margin: 30px;
+  }
+}
+/* -------- TABLET --------- */
+/* -------- TABLET --------- */
+/* -------- TABLET --------- */
+/* -------- TABLET --------- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .info_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #251750;
+  }
+  .anton {
+    margin-left: 30px;
+    max-width: 500px;
+  }
+  .navn {
+    text-align: right;
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20%;
+    font-size: 2.5cqw;
+  }
+
+  /* ----------- KOMPETENCER ----------- */
+
+  .ikoner {
+    display: none;
+  }
+  .ikoner_inline {
+    margin: 30px;
+  }
+  .kompetencer_text {
+    margin: 30px;
+  }
+  /* ------- TOP 3 TING ------ */
+  .top3 {
+    text-align: center;
+  }
+  .top3_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .badminton_container,
+  .mad_container,
+  .fodbold_container {
+    margin: 30px;
+  }
+  .top3_text {
+    text-align: left;
+  }
+  .display_none {
+    display: none;
+  }
+  /* ---------- UDDANNELSE ---------- */
+  .uddannelse_container {
+    background-color: #e06837;
+    color: whitesmoke;
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .uddannelse_text {
-    margin: 150px 30px 150px 30px;
+    margin: 30px;
   }
 }

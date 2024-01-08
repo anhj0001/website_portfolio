@@ -10,7 +10,7 @@
   color: white;
   padding: 30px;
 }
-img:hover {
+.billede:hover {
   filter: grayscale(70%);
   transition: 0.4s linear;
   scale: 95%;
@@ -26,6 +26,12 @@ img:hover {
   padding: 20px;
   border-radius: 20px;
 }
+.tekst {
+  margin: 30px;
+}
+.css {
+  color: var(--tertiary);
+}
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
@@ -38,6 +44,13 @@ img:hover {
   }
   .center {
     text-align: center;
+  }
+  .billede {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
