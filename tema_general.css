@@ -10,11 +10,6 @@
   color: white;
   padding: 30px;
 }
-.billede:hover {
-  filter: grayscale(70%);
-  transition: 0.4s linear;
-  scale: 95%;
-}
 
 .tekst {
   margin: -10px 30px 30px 30px;
@@ -42,6 +37,63 @@
   transition: 0.3s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Chat karrusel */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border: 5px solid var(--primary);
+  border-radius: 20px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: #333;
+}
+
+.prev {
+  left: 10px;
+  color: var(--primary);
+}
+
+.next {
+  right: 10px;
+  color: var(--primary);
+}
+
+.next:hover {
+  color: var(--tertiary);
+  scale: 105%;
+  transition: 0.3s;
+}
+
+.prev:hover {
+  color: var(--tertiary);
+  scale: 105%;
+  transition: 0.3s;
+}
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
 /* ------------- MOBILE ------------ */
@@ -56,11 +108,11 @@
     text-align: center;
   }
   .billede {
-    width: 300px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0 20px 0;
   }
 
   .menuer {
@@ -103,5 +155,12 @@
     background-color: rgba(240, 248, 255, 0.285);
     padding: 20px;
     border-radius: 20px;
+  }
+  .billede {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
   }
 }
